@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Nathan Lawson - Lab 7 Java program (Product and Cost Average)
+
 public class Product {
 
     private static Scanner input = new Scanner(System.in);
@@ -12,6 +14,8 @@ public class Product {
         System.out.println("Products that cost $100.00 or more");
         System.out.println("Enter the product ordered - type 'stop' to end: ");
         productName = input.nextLine();
+
+        //While loop will check the sentinel value AND ensure that case does not matter
         while (!productName.equalsIgnoreCase("stop")) {
             System.out.println("Enter the cost of the product ordered: ");
             productCost = input.nextDouble();
